@@ -38,7 +38,7 @@ h2{
     font-size: 2.5rem;
 }
 h3{
-    font-size: 8.0rem;
+    font-size: 5.0rem;
     display: flex;
     flex-direction: row;
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -46,7 +46,7 @@ h3{
 }
 
 h4{
-    font-size: 8.5rem;
+    font-size: 5.0rem;
 }
 h5{
     font-size: 4.0rem;
@@ -226,10 +226,10 @@ a{
 
 .projeto-descricao{
     margin-top: 2%;
-    font-size: 3rem;
-    font-weight:700;
-    text-align: justify-all;
-    /* text-indent: 60px; */
+    font-size: 1.75rem;
+    font-weight:bold;
+    text-align:justify;
+    text-indent: 40px;
     margin-bottom: 2%;
 
 }
@@ -334,7 +334,7 @@ footer{
 }
 
 .codigos-python {
-    font-size: 3rem;
+    font-size: 1.75rem;
     text-align: justify;
     line-height: 1.5 !important;
     margin-bottom: 20px !important;
