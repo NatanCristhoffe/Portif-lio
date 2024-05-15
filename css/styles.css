@@ -138,9 +138,9 @@ a{
 
 .intro-content,.intro-img{
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Altura total da viewport */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
 }
 
 .intro-content h2{
@@ -154,7 +154,7 @@ a{
     border: none; /* Remove a borda dos botões */
     background: transparent; /* Define o fundo dos botões como transparente */
     font-size: 70px; /* Tamanho da fonte dos botões */
-    color: black; /* Cor do texto dos botões */
+    color: black;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -167,14 +167,10 @@ a{
 
 
 
-.intro-img img{
-    position: statics;
-    top: 0;
-    right: 0;
-    width: auto; 
-    height: auto;
-    width: 30vw;
-    top: -30%;
+.intro-img img {
+    position: static; /* Corrigido */
+    max-width: 100%; /* Ajustado para ocupar a largura máxima disponível */
+    height: auto; /* Para manter a proporção da imagem */
 }
 
 
@@ -343,21 +339,68 @@ footer{
     text-indent: 2%;
 }
 
-@media(max-width:800px){
-    .intro-content, .grid{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    /* Exemplo de ajuste para telas menores que 600px de largura */
-    body {
-        font-size: 1.6rem; /* Reduz o tamanho da fonte */
-    }
-    /* Adicione mais ajustes conforme necessário */
-}
-
 .intro-img img {
     max-width: 100%;
     height: auto;
 }
+
+@media (max-width: 768px) {
+    .grid {
+        display: block;
+    }
+    .img-projeto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 768px) {
+    .img-projeto {
+        grid-template-columns: repeat(1, 1fr); /* Altera para uma coluna em dispositivos móveis */
+    }
+    .img-projeto img {
+        width: 100%; /* Faz com que as imagens ocupem toda a largura da coluna */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    .grid h2{
+        font-size: 100%;
+    }
+    body{
+        display: block;
+    }
+    h1, h2, h3, h4{
+        font-size: 1em;
+    }
+    h3{
+        margin-top: 0.5em;
+    }
+    .white-bg h3{
+        font-weight: 1px;
+    }
+    #botoes{
+        margin-left: 5px; /* Adiciona espaço entre os botões */
+        border: none; /* Remove a borda dos botões */
+        background: transparent; /* Define o fundo dos botões como transparente */
+        font-size: 30px; /* Tamanho da fonte dos botões */
+        color: black;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+}
+
+/* Estilo padrão para a imagem */
+.intro-img {
+    display: block; /* Garante que a imagem seja exibida como um bloco */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilo para telas menores que 768px (tamanhos de tela de dispositivos móveis) */
+@media screen and (max-width: 768px) {
+    .intro-img {
+        display: none; /* Esconde a imagem em telas menores */
+    }
+}
+
+
