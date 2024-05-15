@@ -344,6 +344,8 @@ footer{
     height: auto;
 }
 
+
+
 @media (max-width: 768px) {
     .grid {
         display: block;
@@ -352,6 +354,19 @@ footer{
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .codigo-title {
+        text-align: center; /* Centraliza o texto */
+        font-size: 1em; /* Define o tamanho da fonte */
+        color: #fff; /* Define a cor do texto */
+        margin-bottom: 2rem; /* Adiciona margem inferior */    
+    }
+    .main-content p{
+        font-size: 20px;
+        align-items: center;
     }
 }
 @media (max-width: 768px) {
@@ -402,5 +417,65 @@ footer{
         display: none; /* Esconde a imagem em telas menores */
     }
 }
+@media screen and (max-width: 768px) {
+    .codigo-container {
+        display: block; /* Altera para bloco para que os códigos fiquem um embaixo do outro */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding: 0 20px; /* Adiciona espaçamento lateral para melhorar a legibilidade */
+        max-width: 80vw; /* Largura máxima do código */
+        overflow: auto;
+        max-width: 100rem;
+    }
+    .codigo {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+    }
+}
+/* Estilo para telas menores que 768px (dispositivos móveis) */
+@media screen and (max-width: 768px) {
+    .codigo-container {
+        display: block; /* Altera para bloco para que os códigos fiquem um embaixo do outro */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        padding: 0 20px; /* Adiciona espaçamento lateral para melhorar a legibilidade */
+    }
+    .codigo {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 1.5em;
+    }
+    .codigo pre {
+        font-size: 1.5rem; /* Ajusta o tamanho do texto */
+        margin: 0 auto; /* Centraliza o texto dentro do bloco */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
+}
 
+@media (max-width: 768px) {
+    .menu {
+        padding: 0.6rem; /* Adiciona um espaçamento interno menor */
+    }
+    .menu-content {
+        padding-top: 0.5rem; /* Adiciona um espaçamento menor acima do conteúdo */
+        padding-bottom: 0.5rem; /* Adiciona um espaçamento menor abaixo do conteúdo */
+    }
+    .menu h1 {
+        font-size: 1rem; /* Reduz o tamanho da fonte do título */
+    }
+    .menu ul li a {
+        font-size: 0.5em;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-around; /* Distribui os itens igualmente */
+    }
+    .menu ul li {
+        margin-right: 5px; /* Adiciona um pequeno espaçamento entre os itens */
+    }
+}
 
+@media (max-width: 768px) {
+    .main-content {
+        margin-right: 0; /* Remove a margem direita padrão */
+        margin-left: 0; /* Remove a margem esquerda padrão */
+        padding: 0 var(--gap); /* Adiciona padding nas laterais */
+    }
+}
