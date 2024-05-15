@@ -349,3 +349,15 @@ footer{
     }
 }
 
+@media only screen and (max-width: 600px) {
+    /* Exemplo de ajuste para telas menores que 600px de largura */
+    body {
+        font-size: 1.6rem; /* Reduz o tamanho da fonte */
+    }
+    /* Adicione mais ajustes conforme necessário */
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
